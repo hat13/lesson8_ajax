@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Haley <Talucci>
+Date: 20 April 2016
 Filename:   Movie.html
 - ->
 <head>
@@ -52,6 +52,39 @@ Filename:   Movie.html
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
         </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Year:</h3>
+            <p class="list-group-item-text lead text-primary" id="Year">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Runtime:</h3>
+            <p class="list-group-item-text lead text-primary" id="Runtime">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Country:</h3>
+            <p class="list-group-item-text lead text-primary" id="Country">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Director:</h3>
+            <p class="list-group-item-text lead text-primary" id="Director">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Genre:</h3>
+            <p class="list-group-item-text lead text-primary" id="Genre">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">imdbID:</h3>
+            <p class="list-group-item-text lead text-primary" id="imdbID">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">imdbRating:</h3>
+            <p class="list-group-item-text lead text-primary" id="imdbRating">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">imdbVotes:</h3>
+            <p class="list-group-item-text lead text-primary" id="imdbVotes">  </p>
+        </a> 
+         
 
     </div>
 </div> 
@@ -70,6 +103,16 @@ Filename:   Movie.html
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#Year').html(json.Year);
+                     $('#Runtime').html(json.Runtime);
+                     $('#Country').html(json.Country);
+                     $('#Director').html(json.Director);
+                     $('#Genre').html(json.Genre);
+                     $('#imdbID').html(json.imdbID);
+                     $('#imdbRating').html(json.imdbRating);
+                     $('#imdbVotes').html(json.imdbVotes);
+                    
+                     
                 })
                 .fail(function() {
                       alert("Posting failed.");              
